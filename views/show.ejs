@@ -1,0 +1,23 @@
+<% include partials/header %>
+
+<div class="show+cell">
+    <div class="show+word">
+        <%=word.word%>
+    </div>
+
+    <div>
+        <div>
+            <div class="show+date">
+                <span><%=word.discovered.toDateString() %></span>
+            </div>
+            <div class="show+details">
+                <p><%=word.details%></p>
+            </div>
+            <a class="show+edit" href="<%=word._id%>/edit">edit</a>
+            <form action="/<%=word._id%>/delete" method="POST">
+                <button class="show+delete">delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+<% include partials/footer %>

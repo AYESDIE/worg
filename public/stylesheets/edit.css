@@ -1,0 +1,10 @@
+.edit\+cell{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-top: 2px groove;
+    border-left: 5px groove;
+    padding-top: 15px;
+    padding-right: 4px;
+    padding-left: 10px;
+    padding-bottom: 4px;
+}

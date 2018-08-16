@@ -1,0 +1,46 @@
+.placefiller{
+    margin-top: 60px;
+}
+
+.index\+body{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-top: 2px groove;
+    border-right: 2px groove;
+}
+
+.index\+cell{
+    border-left: 3px groove;
+    border-bottom: 1px groove;
+    margin: 4px 5% 5px 5%;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    color: black;
+
+}
+
+.index\+word{
+    font-weight: 500;
+    font-size:25px;
+}
+
+.index\+date{
+    padding-top: 3px;
+    font-size:10px;
+    font-weight: 100;
+}
+
+.index\+details{
+    font-weight: 100;
+    font-size:14px;
+}
+
+.index\+cell:visited {
+    color: black;
+}
+
+.index\+cell:hover {
+    color: darkblue;
+}

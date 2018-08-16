@@ -1,0 +1,56 @@
+.show\+cell{
+    margin-top: 10px;
+    border-left: 5px groove;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 5px;
+
+}
+
+.show\+word{
+    font-weight: 500;
+    font-size: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    text-align: center;
+}
+
+.show\+details{
+    padding-top: 40px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    font-size: 35px;
+}
+
+.show\+date{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.show\+edit{
+
+    color: black;
+    padding-bottom: 20px;
+}
+
+.show\+edit:visited{
+    color: black;
+}
+
+.show\+edit:hover{
+    color: darkblue;
+}
+
+.show\+delete{
+    background-color: white;
+    border: none;
+    padding: unset;
+}
+
+.show\+delete:hover{
+    background-color: white;
+    border: none;
+    padding: unset;
+    color: red;
+}

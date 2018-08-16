@@ -1,0 +1,22 @@
+<% include partials/header %>
+
+
+<div class="index+body">
+    <% words.forEach(function (word) { %>
+    <a href="/<%=word._id%>">
+        <div class="index+cell">
+            <div class="index+header+container">
+                <div class="index+word"><%=word.word%></div>
+                <div class="index+date"><%=word.discovered.toDateString() %></div>
+            </div>
+
+            <div class="index+details">
+                <p><%=word.details.substring(0,220) %>...</p>
+            </div>
+        </div>
+    </a>
+    <% }) %>
+</div>
+
+
+<% include partials/footer %>

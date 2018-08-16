@@ -1,0 +1,23 @@
+
+.delete\+prompt{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    font-size: 30px;
+    margin-top:10px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.delete\+word{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 100px;
+}
+
+.delete\+form{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 10px;
+}
