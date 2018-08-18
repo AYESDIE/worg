@@ -7,7 +7,7 @@
     padding-bottom: 4px;
     margin-left: 10%;
     margin-right: 10%;
-    border-top: 2px groove;
+    border-top: 2px groove ;
     border-right: 2px groove;
 }
 
@@ -24,6 +24,7 @@
 .index\+word{
     font-weight: 500;
     font-size:25px;
+    text-transform: lowercase;
 }
 
 .index\+date{
@@ -42,5 +43,32 @@
 }
 
 .index\+cell:hover {
-    color: darkblue;
+    color: #ff74d8;
+}
+
+.index\+searchbox {
+
+}
+
+.index\+search{
+    margin-left: 25%;
+    width: 50%;
+    height: 50px;
+    border-radius: 4px;
+}
+
+input {
+    margin: .5rem 0;
+    padding: .5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+
+}
+
+.index\+bottom{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 40px;
 }

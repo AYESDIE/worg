@@ -3,10 +3,10 @@
         ARE YOU SURE YOU WANNA DELETE THE WORD <p class="delete+word"><%=word.word%></p>
     </div>
     <form class="delete+form" action="/<%=word._id%>?_method=DELETE" method="POST">
-        <button class="huge fluid ui inverted red button">:(</button>
+        <button class="huge fluid ui inverted blue button">:(</button>
     </form>
     <div class="delete+form">
-        <a href="/<%=word._id%>" class="massive fluid ui inverted violet button">I changed my mind</a>
+        <a href="/<%=word._id%>" class="massive fluid ui inverted pink button">I changed my mind</a>
     </div>
 
 <% include partials/footer %>

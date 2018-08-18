@@ -6,4 +6,5 @@ var wordSchema = new mongoose.Schema({
     discovered: {type: Date, default: Date.now}
 });
 
+
 module.exports = mongoose.model("Word", wordSchema);

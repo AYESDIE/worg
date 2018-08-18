@@ -1,0 +1,34 @@
+.all\+body{
+    border-top: 2px groove ;
+    border-left: 2px groove;
+    margin-left: 15%;
+    margin-top: 5%;
+    padding-left: 30px;
+    padding-top: 30px;
+    margin-right: 15%;
+    padding-bottom: 100px;
+
+}
+
+.all\+word:hover{
+    color: #ff74d8;
+    text-transform: lowercase;
+}
+
+.all\+word{
+    color: black;
+    text-transform: lowercase;
+
+}
+
+.all\+cell{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+
+
+

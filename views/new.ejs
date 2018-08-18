@@ -1,4 +1,10 @@
 <% include partials/header %>
+
+    <div class="index+searchbox">
+        <form action="/words" method="POST">
+            <input required class="index+search" type="text" placeholder="search..." name="word" autocomplete="off">
+        </form>
+    </div>
     <div class="new+cell">
         <div class="ui huge header">
             New Word
@@ -6,13 +12,13 @@
         <form class="ui form" action="/" method="POST">
             <div class="field">
                 <label >Word</label>
-                <input type="text" name="word[word]" placeholder="word">
+                <input required type="text" name="word[word]" placeholder="word" autocomplete="off">
             </div>
             <div class="field">
                 <label >Details</label>
-                <textarea class="required" name="word[details]" placeholder="Details goes here"></textarea>
+                <textarea required class="required" name="word[details]" placeholder="Details goes here"></textarea>
             </div>
-            <input class="ui violet big basic button" type="submit">
+            <button class="big ui inverted pink button">I learn't a new word.</button>
         </form>
     </div>
 <% include partials/footer %>

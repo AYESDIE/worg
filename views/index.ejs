@@ -1,5 +1,11 @@
 <% include partials/header %>
 
+<div class="index+searchbox">
+    <form action="/words" method="POST">
+            <input required class="index+search" type="text" placeholder="search..." name="word" autocomplete="off">
+    </form>
+</div>
+
 
 <div class="index+body">
     <% words.forEach(function (word) { %>
@@ -17,6 +23,12 @@
     </a>
     <% }) %>
 </div>
+
+<div class="index+bottom">
+    <a href="/new" class="massive fluid ui inverted pink button"><i class="plus icon"></i></a>
+</div>
+
+
 
 
 <% include partials/footer %>

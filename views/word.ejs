@@ -1,5 +1,6 @@
 <% include partials/header %>
 
+
 <div class="index+searchbox">
     <form action="/words" method="POST">
         <input required class="index+search" type="text" placeholder="search...  <%=word.word%>" name="word" autocomplete="off">
@@ -19,11 +20,12 @@
             <div class="show+details">
                 <p><%=word.details%></p>
             </div>
-            <a class="show+edit" href="<%=word._id%>/edit">edit</a>
+            <a class="show+edit" href="http://localhost:1020/<%=word._id%>/edit">edit</a>
             <form action="/<%=word._id%>/delete" method="POST">
                 <button class="show+delete">delete</button>
             </form>
         </div>
     </div>
 </div>
+
 <% include partials/footer %>

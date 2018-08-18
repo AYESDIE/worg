@@ -3,8 +3,8 @@ const   express = require("express"),
         methodOverride = require("method-override"),
         bodyParser = require("body-parser"),
         Word = require("./models/word"),
-        mongoose = require("mongoose");
-
+        mongoose = require("mongoose"),
+        random = require('mongoose-random');
 
 mongoose.connect("mongodb://localhost/worg");
 app.use(bodyParser.urlencoded({extended:true}));
@@ -13,22 +13,55 @@ app.use(methodOverride("_method"));
 app.use(express.static(__dirname + '/public'));
 
 
+
 //  index
+
+app.post('/words',function (req,res) {
+    queryword = req.body.word;
+
+    res.redirect("/words/"+queryword);
+
+
+});
+
+app.get('/all',function (req,res) {
+    Word.find({}, function (err,word) {
+        if(err){
+            console.log("error");
+        } else {
+            res.render("all",{words: word});
+        }
+    });
+});
+
+
+app.get('/words/:word',function (req,res) {
+    queryword = req.params.word;
+    Word.findOne({word:queryword},function (err,foundWord) {
+        if(err){
+            res.redirect("/");
+        }   else    {
+            res.render("word",{word:foundWord});
+        }
+    });
+});
+
+
 app.get("/",function (req,res) {
-    Word.find({},function (err,word) {
+    Word.find().sort('-date').limit(9).exec(function (err,word) {
         if(err){
             console.log("error");
         } else {
             res.render("index",{words: word});
         }
     });
-
 });
 
 
 //  new
 app.get("/new",function (req,res) {
     res.render("new");
+
 });
 
 
@@ -99,6 +132,11 @@ app.delete("/:id",function (req,res) {
             res.redirect("/");
         }
     });
+});
+
+
+app.get("*",function(req,res){
+   res.render("error");
 });
 
 

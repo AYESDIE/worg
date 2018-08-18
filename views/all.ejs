@@ -1,0 +1,15 @@
+<% include partials/header %>
+
+<div class="index+searchbox">
+    <form action="/words" method="POST">
+        <input required class="index+search" type="text" placeholder="search..." name="word" autocomplete="off">
+    </form>
+</div>
+<div class="all+body">
+    <% words.forEach(function (word) { %>
+            <div class="all+cell">
+                 <a class="all+word" href="/<%=word._id%>"><%=word.word%></a>
+            </div>
+    <% }) %>
+</div>
+<% include partials/footer %>
